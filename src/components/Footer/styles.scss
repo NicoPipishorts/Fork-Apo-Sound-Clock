@@ -1,0 +1,29 @@
+@use "../../styles/vars";
+
+.footer{
+    z-index: 15;
+    position: absolute;
+    bottom: 0;
+    
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        max-height: 100px;
+        background-color: var(--gray-2);
+        padding: 1rem 2.5rem;
+        box-shadow: 0 0 30px var(--gray-9);
+    }
+    &__button{
+        box-shadow: 0 0 10px var(--gray-6)!important;
+    }
+    &__copyright{
+        text-align: center;
+        padding: 0.7rem;
+        font-size: 1rem ;
+        background-color: var(--gray-3);
+    }
+
+}
+
+@import "./responsive.scss";

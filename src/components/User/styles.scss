@@ -1,0 +1,245 @@
+@use "../../styles/vars";
+
+.user {
+
+  &-wrapper {
+    padding-bottom: 30rem;
+  }
+  
+  &-container {
+    display: flex;
+    justify-content: left;
+    margin-top: vars.$marginTop;
+    padding: 5rem 10rem;
+    font-family: vars(--font-sans);
+    // background-color: var(--orange-4);
+  }
+
+  &__avatar--container { 
+    //background-color: var(--orange-4);
+    margin-right: 2rem;
+  }
+
+  &__avatar {
+    min-width: 18vw!important;
+    min-height: 18vw!important; 
+    background-position: center;
+    background-size: cover;
+    border: 2px solid var(--gray-9);
+    box-shadow: 0 0 28px var(--gray-8);
+    border-radius: var(--radius-3);
+  }
+
+  &__header {
+
+    &-container {
+      //background-color: var(--orange-4);
+      display: flex;
+      flex-direction: row;
+      min-width: 65vw;
+      justify-content: space-between;
+      padding-top: 1rem;  
+    }
+
+    &--name {
+      margin: 0;
+      width: 100%;
+      color: var(--gray-3);
+      text-shadow: 0 0 18px var(--gray-8);
+      font-size: var(--font-size-fluid-3);
+      font-weight: var(--font-weight-9);
+      text-transform: capitalize;
+
+      &-noUser {
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 85%;
+        color: var(--orange-6);
+        font-size: var(--font-size-fluid-3);
+        font-weight: var(--font-weight-9);
+      }
+
+    }
+
+    &--welcome {
+      font-size: var(--font-size-fluid-2)!important;
+      color: var(--orange-4);
+    }
+
+    &--link {
+      color: var(--gray-8);
+      font-size: var(--font-size-fluid-1);
+    }
+
+    &--email {
+      margin-top: .5rem;
+      color: var(--gray-8);
+      font-size: var(--font-size-fluid-1);
+    }
+
+    &-h2 {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 2rem;
+      color: var(--gray-9);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+      font-size: var(--font-size-fluid-2);
+      font-weight: bolder;
+
+      &--stats {
+        display: block;
+        margin-left: 1rem;
+      }
+
+    }
+  
+  }
+
+  &__description {
+    padding-top: 2rem;  
+    padding-right: 1rem;
+    max-width: 30vw;
+    color: var(--gray-2);
+    font-size: var(--font-size-4);
+    font-weight: 400;
+    line-height: var(--font-lineheight-1);
+    text-align: right;
+  }
+  
+  &__modifyUser--container {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__modifyUser--btn {
+    background-color: vars.$color-teal!important;
+    color: var(--gray-0)!important;  
+    font-size: var(--font-size-3)!important;    
+  }
+
+  &__addSong--btn {
+    background-color: vars.$color-teal!important;
+    color: var(--gray-0)!important;  
+    font-size: var(--font-size-3)!important;    
+  }
+
+}
+
+/* --- Style for Wrapper Container around the cards */
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // background-color: var(--orange-4);
+}
+
+.content {
+
+  &-container {
+    text-align: left;
+    padding: 2rem 12rem;
+  }
+  
+  &__addMusic--container{
+    display: flex;
+    min-width: 80vw;
+    justify-content: end;
+    margin-left: -2rem;
+  }
+
+  &__addSong--btn{
+    background-color: RGBA(81, 178, 172, .7)!important;
+    color: var(--gray-0)!important;   
+    font-size: var(--font-size-3)!important;       
+  }
+  
+  &__section {
+
+    &--container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      overflow-y: hidden;
+      overflow-x: scroll;
+
+      &-playlist {
+        padding-bottom: 3rem;
+      }
+
+      &-container__placeholder {
+        display: none;
+      }
+
+    }
+    
+    &--title {
+    margin-top: 3rem;
+    color: var(--gray-0);
+    font-weight: var(--font-weight-9);
+    font-size: var(--font-size-fluid-3);
+    text-shadow: 0 0 15px vars.$shadow-color;
+    }
+
+  }
+
+}
+
+.upload-form {
+  color: vars.$color-teal!important;
+
+}
+
+
+.file-input {
+  
+  &-container {
+    display: flex;
+  }
+
+  &__btn {
+    display: flex!important;
+    min-width: fit-content!important;
+    align-items: center!important;
+    font-size: var(--font-size-3)!important;
+    //border-right: 10px solid #fff!important;
+    z-index: 20;
+  }
+
+  &__hidden {
+    display: none;
+    font-size: 1.2rem!important;
+    margin-left: -119px!important;
+    color: vars.$color-teal!important;
+
+    &--span {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      font-size: var(--font-size-4);
+      color: vars.$color-teal;
+    }
+
+  }
+
+  &__checkbox {
+    font-size: var(--font-size-3)!important;
+    color: vars.$color-teal!important;
+  }
+
+}
+
+.form__submit-container {
+  display: flex;
+  justify-content: end;
+}
+
+.file-textArea {
+  margin-left: 2rem;
+}
+
+@import "./responsive.scss";
+@import "./datePicker.scss";

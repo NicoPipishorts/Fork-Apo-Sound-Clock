@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px) {
+
+  .legal {
+    margin-top: calc(vars.$marginTop + 5rem);
+    padding-top: 1rem;
+    padding-bottom: 15rem;
+    
+  
+    &__title {
+      text-align: center;
+      padding: 1rem;
+      margin: 1em auto;
+      max-width: 90vw;
+      color: var(--gray-1);
+      background-color: vars.$color-teal;
+      border-radius: var(--radius-3);
+      box-shadow: 0 0 30px var(--gray-9);
+      font-size: var(--font-size-fluid-3);
+    }
+  
+    &__text {
+      padding: 1.5rem;
+      max-width: 90vw;
+      margin: 0 auto;
+      background-color: var(--gray-1);
+      border: var(--border-size-1) solid var(--gray-9);
+      border-radius: var(--radius-3);
+      box-shadow: 0 0 30px var(--gray-9);
+    }
+  
+  }
+
+}

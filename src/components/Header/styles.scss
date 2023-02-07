@@ -1,0 +1,115 @@
+@use "../../styles/vars";
+
+.header {
+
+  &__container {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--gray-2);
+    padding: 0 2rem;
+    height: vars.$navbar_height;
+    box-shadow: 0 0 60px  var(--gray-9);
+    border-bottom: 2px solid var(--gray-9);
+  }
+
+  &__logo-icon {
+    text-shadow: 0 0 10px var(--gray-5); 
+    color: var(--cyan-8)!important;
+  }
+
+}
+
+.navbar {
+
+  &__container {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    cursor: pointer;
+    margin-top: .3rem;
+    min-height: 5.5rem;
+    min-width: 8rem;
+    padding: 0;
+    background-size: contain;
+  }
+
+  &__buttons-container {
+    display: flex ;
+    flex-direction: row;   
+  }
+
+  &__buttons {
+    background-color: vars.$color-teal!important;
+    color: var(--gray-0)!important;
+    padding: 1rem 1.5rem!important;
+    margin-left: 1rem!important;
+
+    &--user {
+      background-color: var(--orange-7)!important;
+      font-size: var(--font-size-3)!important;
+      color: var(--gray-0)!important;
+      text-transform: capitalize!important;
+
+      &-text {
+        margin-left: 0.8rem;
+      }
+      
+    }
+
+    &--logout {
+      font-size: var(--font-size-3)!important;
+      color: var(--gray-0)!important;        
+    }
+
+    &--icon {
+      margin: 0!important;
+      padding-right: 0rem!important;
+      padding-left: .4rem!important;
+    }
+
+    &--admin {
+      display: flex;
+      justify-content: center;
+      font-size: var(--font-size-3)!important;
+      color: var(--gray-0)!important;        
+    }
+
+  }
+
+  &__login-btns {
+    padding-left: .5rem!important;
+  }
+
+}
+
+.error__mail{
+  width: 70%!important;
+  margin: 2rem auto!important;
+  box-shadow: 0 0 28px var(--gray-5)!important;
+  &__content{
+    text-align: center!important;
+    color: red!important;
+  }
+
+}
+
+.modal {
+
+  &__password--hidden {
+    display: none;
+
+    &--show {
+      display: block;
+
+    }
+  }
+
+}
+
+@import "./responsive.scss";

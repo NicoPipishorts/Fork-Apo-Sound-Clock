@@ -1,0 +1,52 @@
+@use '../../styles/vars';
+
+.contact-form{
+
+    &-container {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    &__form {
+        padding: 3rem;
+        margin: 0 auto;
+        min-width: 60%;
+        max-height: fit-content;
+        background-color: var(--gray-2);
+        border-radius: var(--radius-conditional-3);
+        box-shadow: 0 0 30px var(--gray-9);
+    }
+
+    &__form > h1 {
+        font-size: var(--font-size-fluid-2);
+        font-weight: 900;
+        color: vars.$color-teal;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.ui.input {
+    border-radius: var(--radius-conditional-2);
+    border: 1px solid vars.$color-teal;
+    overflow: hidden;
+}
+
+.ui.label {
+    margin: -1px 0 0 -1px!important;
+    border-radius: var(--radius-conditional-2);
+}
+
+.ui.form textarea {
+    border-radius: var(--radius-conditional-2);
+    border: 1px solid vars.$color-teal;
+    background-color: transparent;
+    font-size: var(--font-size-4);
+    overflow: hidden;
+}
+
+.ui.form textarea:focus {
+    background-color: transparent;
+
+}

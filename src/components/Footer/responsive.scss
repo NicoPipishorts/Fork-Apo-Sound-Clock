@@ -1,0 +1,12 @@
+@media only screen and (max-width: 480px) {
+
+  .footer{
+    
+    &__container{
+        padding: 1rem 0;
+        box-shadow: 0 0 30px var(--gray-9);
+    }
+
+  }
+
+}

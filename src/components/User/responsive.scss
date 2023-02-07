@@ -1,0 +1,375 @@
+@media only screen and (max-width: 480px) {
+ 
+  .user {
+
+    &-wrapper {
+      padding-bottom: 30rem;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: calc(vars.$marginTop + 4rem);
+      padding: 0;
+      font-family: vars(--font-sans);
+      //background-color: var(--orange-4);
+    }
+  
+    &__avatar--container { 
+      //background-color: var(--orange-4);
+      margin-top: 4rem;
+      width: 80vw;
+      margin-right: 0;
+    }
+  
+    &__avatar {
+      min-width: 80vw!important;
+      max-width: 80vw!important;
+      min-height: 80vw!important; 
+      background-position: center;
+      background-size: cover;
+      border: 2px solid var(--gray-9);
+      box-shadow: 0 0 28px var(--gray-8);
+    }
+  
+    &__header {
+  
+      &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 80vw;
+        max-width: 80vw;
+        padding-top: 1rem;  
+      }
+  
+      &--name {
+        margin: 0;
+        color: var(--gray-3);
+        text-shadow: 0 0 18px var(--gray-8);
+        font-size: var(--font-size-fluid-3);
+        font-weight: var(--font-weight-9);
+        text-transform: capitalize;
+
+        &-noUser {
+          margin-left: 5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-width: 100%;
+          min-height: 85%;
+          color: var(--orange-6);
+          font-size: var(--font-size-fluid-3);
+          font-weight: var(--font-weight-9);
+        }
+
+      }
+
+      &--welcome {
+        font-size: var(--font-size-fluid-2)!important;
+        color: var(--orange-4);
+      }
+
+      &--link {
+        color: var(--gray-8);
+        font-size: var(--font-size-fluid-1);
+      }
+
+      &--data-container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      &-h2 {
+        width: fit-content;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        text-align: left;
+        color: var(--gray-9);
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+        font-size: var(--font-size-fluid-2);
+        font-weight: bolder;
+    
+        &--stats {
+          display: block;
+          max-width: 10rem;
+          margin-left: 1rem;
+        }
+    
+      }
+
+      &-h2:last-child {
+        margin-left: 0;
+      }
+    
+    }
+  
+    &__description {
+      min-width: 80vw;
+      color: var(--gray-2);
+      font-size: var(--font-size-3);
+      font-weight: 400;
+      line-height: var(--font-lineheight-1);
+      text-align: center;
+    }
+  
+    &__modifyUser--container {
+      position: absolute;
+      top: 73vw;
+      right: 11vw;
+    }
+  
+    &__modifyUser--btn {
+      background-color: RGBA(81, 178, 172, .7)!important;
+      color: var(--gray-0)!important;   
+      font-size: var(--font-size-1)!important;      
+    }
+  
+  }
+
+  .content {
+  
+    &-container {
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 0;
+      padding-left: 2rem;;
+    }
+  
+    &__addMusic--container{
+      display: flex;
+      min-width: 80vw;
+      justify-content: center;
+      margin-left: -2rem;
+    }
+
+    &__addSong--btn{
+      background-color: RGBA(81, 178, 172, .7)!important;
+      color: var(--gray-0)!important;   
+      font-size: var(--font-size-2)!important;       
+    }
+  
+    &__section {
+
+      &--container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        &-playlist {
+          padding-bottom: 3rem;
+        }
+      }
+      
+      &--title {
+      margin-top: 3rem;
+      color: var(--gray-0);
+      font-weight: var(--font-weight-9);
+      font-size: var(--font-size-fluid-3);
+      text-shadow: 0 0 15px vars.$shadow-color;
+      }
+
+      &-container__placeholder {
+        z-index: 3;
+        margin-top: -1.5rem;
+        min-width: 100%;
+        min-height: 2rem;
+        background-color: var(--cyan-9);
+      }
+
+    }
+  
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+ 
+  .user {
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      align-items: cente;
+      max-width: 90vw;
+      margin: 0 auto;
+      margin-top: calc(vars.$marginTop - 2rem);
+      font-family: vars(--font-sans);
+      //background-color: var(--orange-4);
+    }
+  
+    &__avatar--container { 
+      max-width: 25vw;
+      margin-right: 0;
+    }
+  
+    &__avatar {
+      min-width: 25vw!important;
+      max-width: 25vw!important;
+      min-height: 25vw!important; 
+      background-position: center;
+      background-size: cover;
+      border: 2px solid var(--gray-9);
+      box-shadow: 0 0 28px var(--gray-8);
+    }
+  
+    &__header {
+  
+      &-container {
+        display: flex;
+        flex-direction: row;
+        min-width: 60vw;
+        max-width: 60vw;
+        margin-left: 2rem;
+      }
+  
+      &--name {
+        margin: 0;
+        color: var(--gray-3);
+        text-shadow: 0 0 18px var(--gray-8);
+        font-size: var(--font-size-5);
+        font-weight: var(--font-weight-9);
+        text-transform: capitalize;
+
+        &-noUser {
+          margin-left: 5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-width: 100%;
+          min-height: 85%;
+          color: var(--orange-6);
+          font-size: var(--font-size-fluid-3);
+          font-weight: var(--font-weight-9);
+        }
+
+      }
+
+      &--welcome {
+        font-size: var(--font-size-4)!important;
+        color: var(--orange-4);
+      }
+
+      &--link, &--email {
+        color: var(--gray-8);
+        font-size: var(--font-size-2);
+      }
+
+      &--data-container {
+        padding: 0;
+        display: flex;
+        max-width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      &-h2 {
+        margin-top: 1rem;
+        text-align: left;
+        color: var(--gray-9);
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+        font-size: var(--font-size-4);
+        font-weight: bolder;
+    
+        &--stats {
+          display: block;
+          margin-left: 1rem;
+        }
+    
+      }
+
+      &-h2:last-child {
+        margin-left: 0;
+      }
+    
+    }
+  
+    &__description {
+      display: flex;
+      align-items: flex-start;
+      min-width: 20vw;
+      max-width: 20vw;
+      padding: 0;
+      color: var(--gray-2);
+      font-size: var(--font-size-3);
+      font-weight: 400;
+      line-height: var(--font-lineheight-1);
+      text-align: right;
+    }
+  
+    &__modifyUser--btn {
+      background-color: RGBA(81, 178, 172, .7)!important;
+      color: var(--gray-0)!important;   
+      font-size: var(--font-size-1)!important;      
+    }
+  
+  }
+
+  .content {
+  
+    &-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-left: 2rem;;
+    }
+  
+    &__addMusic--container{
+      display: flex;
+      min-width: 100vw;
+      justify-content: end;
+      padding-right: 1rem;
+      margin-top: -3rem;
+    }
+
+    &__addSong--btn{
+      background-color: RGBA(81, 178, 172, .7)!important;
+      color: var(--gray-0)!important;   
+      font-size: var(--font-size-2)!important;       
+    }
+  
+    &__section {
+
+      &--container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        &-playlist {
+          padding-bottom: 3rem;
+        }
+      }
+      
+      &--title {
+      margin-top: 3rem;
+      color: var(--gray-0);
+      font-weight: var(--font-weight-9);
+      font-size: var(--font-size-fluid-3);
+      text-shadow: 0 0 15px vars.$shadow-color;
+      }
+
+      &-container__placeholder {
+        z-index: 3;
+        margin-top: -1.5rem;
+        min-width: 100%;
+        min-height: 2rem;
+        background-color: var(--cyan-9);
+      }
+
+    }
+  
+  }
+
+}

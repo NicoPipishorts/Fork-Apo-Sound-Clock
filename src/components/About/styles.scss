@@ -1,0 +1,50 @@
+@use "../../styles/vars";
+
+.contact{
+
+    &-container-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    &__about--photo {
+        min-width: 100%;
+        min-height: 18vw!important;
+        max-height: 18vw!important;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &-container-mobile {
+        display: none;
+    }
+
+    &-cardgroup {
+        flex-grow: unset!important;
+    }
+
+    &__item{
+        text-align: center;
+        min-width: calc(100vw/9);
+        max-width: calc(100vw/9);
+    }
+   
+}
+
+.ui.card > .content {
+    flex-grow: unset!important;
+}
+
+.ui.card.contact__item {
+    min-height: 30rem!important;
+    overflow-wrap: anywhere!important;
+}
+
+.contact-cardgroup {
+    min-width: 90vw;
+    justify-content: space-around
+}
+
+@import "./responsive.scss";

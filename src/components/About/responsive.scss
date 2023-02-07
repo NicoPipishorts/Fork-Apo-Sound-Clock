@@ -1,0 +1,115 @@
+@media only screen and (max-width: 480px) {
+
+  .contact {
+
+    &-container-desktop {
+      display: none;
+    }
+
+    &-container-mobile {
+      display: flex;
+      align-items: center;
+      min-height: 100vh;            
+    }
+
+    &__about--photo {
+        min-width: 100%;
+        min-height: 70vw!important;
+        max-height: 70vw!important;
+        background-position: center;
+        background-size: cover;
+    }
+
+  }
+
+  .swiper {
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    min-height: 100vh; 
+  }
+
+  .swiper-button-next {
+    margin-right: .3rem;
+  }
+
+  .swiper-button-prev {
+    margin-left: .3rem;
+  }
+  
+  .ui.card {
+      min-width: 100%;
+      min-height: 30rem!important;
+      overflow-wrap: anywhere!important;
+      border-radius: 0;
+  }
+  
+  .ui.card>.image>img {
+    max-height: 30rem;
+    border-radius: 0;
+    border: 0.5rem solid #fff!important;
+  }
+
+  .ui.card > .content {
+      flex-grow: inherit;
+  } 
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+
+  .contact{
+
+    &-container-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: vars.$marginTop;
+        padding: 3rem 3rem 10rem;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+    &__about--photo {
+        min-width: 100%;
+        min-height: 18vw!important;
+        max-height: 18vw!important;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &-container-mobile {
+        display: none;
+    }
+
+    &-cardgroup {
+        flex-grow: unset!important;
+    }
+
+    &__item{
+        text-align: center;
+        min-width: calc(100vw/9);
+        max-width: calc(100vw/9);
+    }
+    
+  }
+
+  .ui.card > .content {
+      flex-grow: unset!important;
+  }
+
+  .ui.card.contact__item {
+      min-height: 30rem!important;
+      overflow-wrap: anywhere!important;
+  }
+
+  .contact-cardgroup {
+      min-width: 80vw;
+      justify-content: space-around
+  }
+
+}

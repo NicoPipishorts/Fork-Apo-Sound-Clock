@@ -1,0 +1,48 @@
+@use "../../styles/vars.scss";
+
+.legal {
+	margin-top: vars.$marginTop;
+	padding-top: 5rem;
+	padding-bottom: 15rem;
+	
+
+	&__title {
+		text-align: center;
+		padding: 1rem;
+		margin: 1em auto;
+		color: var(--gray-1);
+		background-color: vars.$color-teal;
+		border-radius: var(--radius-3);
+		box-shadow: 0 0 30px var(--gray-9);
+		font-size: var(--font-size-fluid-3);
+	}
+
+	&__text {
+		padding: 3rem;
+		max-width: 60%;
+		margin: 0 auto;
+		background-color: var(--gray-1);
+		border: var(--border-size-1) solid var(--gray-9);
+		border-radius: var(--radius-3);
+		box-shadow: 0 0 30px var(--gray-9);
+	}
+
+}
+
+p, h2, ul, ol, li {
+	border: none!important;
+	min-width: 100%;
+	text-align: justify;
+}
+
+ul, ol {
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: var(--font-size-fluid-2);
+	font-weight: 900!important;
+	color: black !important;
+}
+
+@import "./responsive.scss";

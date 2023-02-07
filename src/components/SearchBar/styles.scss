@@ -1,0 +1,21 @@
+.searchbar {
+
+ &-container {
+    margin-top: .3rem;
+    min-width: 50%;
+  }
+
+  &-input {
+    border: 1px solid var(--cyan-6)!important;
+    border-radius: var(--radius-conditional-3)!important;
+    color: var(--cyan-9)!important;
+    box-shadow: var(--shadow-3);
+  }
+
+}
+
+i.circular.icon {    
+  border: 2px solid var(--cyan-9);
+}
+
+@import "./responsive.scss";

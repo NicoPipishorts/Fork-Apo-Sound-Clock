@@ -1,0 +1,53 @@
+@use "../../styles/vars";
+
+.playlist{
+
+  &__container {
+    width:  100vw;
+    margin: 0 auto;
+    margin-top: vars.$marginTop; 
+    padding: 5rem 0 10rem;
+  }
+
+  &__h1 {
+    margin: 0;
+    width: 100%;
+    color: var(--gray-3);
+    text-shadow: 0 0 10px var(--gray-8);
+    font-size: var(--font-size-fluid-3);
+    font-weight: var(--font-weight-9);
+    text-transform: capitalize;
+
+    &--span {
+      color: var(--orange-6);
+    }
+
+  }
+
+  &__avatar--container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+  }
+
+  &__avatar {
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 15vw;
+    max-height: 15vw;
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid var(--gray-9);
+    box-shadow: 0 0 28px var(--gray-8);
+    border-radius: var(--radius-3)
+  }
+
+  &__cards--container {
+    padding-left: 5rem;
+    min-width: 100vw;
+  }
+
+}
+
+@import "./responsive.scss";

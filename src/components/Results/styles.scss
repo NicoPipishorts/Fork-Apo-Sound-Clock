@@ -1,0 +1,56 @@
+@use "../../styles/vars";
+
+.results {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: vars.$marginTop;
+  padding: 5rem 0 15rem;
+  width: 80%;
+
+  &__h1 {
+    color: var(--gray-0);
+    min-width: 100%!important;
+    text-shadow: 0 0 15px vars.$shadow-color;
+    font-weight: var(--font-weight-8);
+    font-size: var(--font-size-fluid-3);
+
+    &--term {
+      color: var(--orange-7);
+    }
+
+  }
+
+  &__h2 {
+    min-width: 100%!important;
+    color: var(--gray-0)!important;
+    text-shadow: 0 0 15px vars.$shadow-color;
+    font-weight: var(--font-weight-8);
+    font-size: var(--font-size-fluid-2)!important;
+  }
+
+  &__h3 {
+    min-width: 100%!important;
+    margin-left: 2rem;
+    margin-bottom: 5rem!important; /* margin-bottom applied on card-container in Card/styles.scss */
+    color: var(--gray-8)!important;
+    text-shadow: 0 0 8px vars.$shadow-color;
+    font-weight: var(--font-weight-8);
+    font-size: var(--font-size-5)!important;
+
+    &--icon {
+      position: absolute!important;
+      margin-top: -.2rem!important;
+    }
+
+  }
+
+  &__titles {
+    margin-left: 1rem;
+    color: var(--gray-0)!important;
+    text-shadow: 0 0 10px var(--gray-7);
+  }
+
+}
+
+@import "./responsive.scss";

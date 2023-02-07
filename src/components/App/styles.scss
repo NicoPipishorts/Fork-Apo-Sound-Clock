@@ -1,0 +1,8 @@
+@use "../../styles/vars";
+
+.App {
+  position: relative;
+  min-width: 100vw;
+  min-height: calc(100vh - (vars.$marginTop));
+  background-color: var(--cyan-9);
+}

@@ -1,0 +1,56 @@
+@use "../../styles/_vars";
+
+.columns {
+  padding-bottom: calc(5rem + (vars.$marginTop));
+  min-height: 100vh;
+
+  &-container {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 1rem 5rem;
+    width: 100%;
+    color: var(--gray-6);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-9);
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &__title {
+      display: flex;
+      min-width: 80vw;
+      margin-left: 2rem;
+      margin-top: 5rem;
+      margin-bottom: -1rem; ;
+      font-family: var(--font-sans);
+      font-weight: var(--font-weight-9);
+      font-size: var(--font-size-fluid-3);
+
+        &-1 {
+          color: var(--yellow-8);
+        }
+    
+        &-2 {
+          color: var(--red-6);
+        }
+    
+        &-3 {
+          color: var(--cyan-6);
+        }
+  
+        &-4 {
+          color: var(--grape-9);
+        }
+
+    }
+
+    &__placeholder {
+      display: none;
+    }
+
+  }
+
+}
+
+@import "./responsive.scss";
